@@ -1,0 +1,2062 @@
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing AdminController#New (for 127.0.0.1 at 2013-01-16 15:19:27) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"New", "controller"=>"admin"}
+Rendering  within layouts/admin
+Rendering admin/New
+Rendered admin/_form (0.00300)
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01000 (83%) | 200 OK [http://127.0.0.1/Admin/New]
+
+
+Processing AdminController#New (for 127.0.0.1 at 2013-01-16 15:19:27) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"New", "controller"=>"admin"}
+Rendering  within layouts/admin
+Rendering admin/New
+Rendered admin/_form (0.00200)
+Completed in 0.00600 (166 reqs/sec) | Rendering: 0.00500 (83%) | 200 OK [http://127.0.0.1/Admin/New]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:20:07) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"1111111111", "price"=>"11111111111", "title"=>"1111111111111", "date_available(1i)"=>"2013", "description"=>"1111111111111111", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"19"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('1111111111', '2013-01-16 15:19:00', '11111111111.0', '1111111111111', '1111111111111111')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.07000 (14 reqs/sec) | DB: 0.00400 (5%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:08) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00500 (31%) | DB: 0.00400 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:20:09) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00800 (44%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:20:09) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00600 (37%) | DB: 0.00400 (25%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:20:16) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"222222222222222222", "price"=>"222222222222222222222", "title"=>"2222222222222222", "date_available(1i)"=>"2013", "description"=>"2222222222222222222222", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"20"}, "action"=>"create", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('222222222222222222', '2013-01-16 15:20:00', '222222222222222222222.0', '2222222222222222', '2222222222222222222222')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01500 (66 reqs/sec) | DB: 0.00400 (26%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.003000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00600 (37%) | DB: 0.00300 (18%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00500 (33%) | DB: 0.00400 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:20:17) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:20:18) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:20:23) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"33333333333333333", "price"=>"33333333333333333", "title"=>"33333333333", "date_available(1i)"=>"2013", "description"=>"333333333333333", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"20"}, "action"=>"create", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('33333333333333333', '2013-01-16 15:20:00', '33333333333333333.0', '33333333333', '333333333333333')[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00600 (37%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:24) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:24) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00600 (37%) | DB: 0.00400 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:20:28) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00600 (33%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:20:28) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00400 (24%) | DB: 0.00400 (24%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:30) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:20:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 2) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00400 (25%) | DB: 0.00500 (31%) | 200 OK [http://127.0.0.1/admin/show/2]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:20:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 2) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00500 (29%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/show/2]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:20:33) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00600 (33%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:21:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:21:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.06700 (14 reqs/sec) | Rendering: 0.00600 (8%) | DB: 0.00500 (7%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:21:15) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"4444444444444", "price"=>"444444444444", "title"=>"44444444444444444444", "date_available(1i)"=>"2013", "description"=>"44444444444444444444444444", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"21"}, "action"=>"create", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('4444444444444', '2013-01-16 15:21:00', '444444444444.0', '44444444444444444444', '44444444444444444444444444')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00500 (31%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:21:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00700 (36%) | DB: 0.00500 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:21:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00700 (36%) | DB: 0.00500 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:29:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.006000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00700 (34%) | DB: 0.00600 (30%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:29:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00600 (33%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:29:37) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"dsfads", "price"=>"sdafds", "title"=>"desfadsf", "date_available(1i)"=>"2013", "description"=>"dsfaddddddddddd", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"29"}, "action"=>"create", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('dsfads', '2013-01-16 15:29:00', '0.0', 'desfadsf', 'dsfaddddddddddd')[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.06300 (15 reqs/sec) | DB: 0.00600 (9%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:29:37) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.00800 (38%) | DB: 0.00500 (23%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:29:37) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00800 (39%) | DB: 0.00500 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:31:41) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00500 (29%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:31:41) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00400 (23%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:41:40) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.00800 (38%) | DB: 0.00600 (28%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:41:41) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00400 (23%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:41:42) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00300)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00400 (23%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:41:44) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"", "price"=>"", "title"=>"", "date_available(1i)"=>"2013", "description"=>"", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"41"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00500 (27%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:41:45) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"create", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/admin/list
+Filter chain halted as [#<ActionController::Filters::ClassMethods::ProcFilter:0x5fbd178 @filter=#<Proc:0x05541ec4@D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/verification.rb:74>>] returned false.
+Completed in 0.00200 (499 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:41:45) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.003000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00700 (41%) | DB: 0.00400 (23%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:42:14) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"", "price"=>"", "title"=>"21324", "date_available(1i)"=>"2013", "description"=>"432141", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"41"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00600 (33%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:42:15) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"create", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/admin/list
+Filter chain halted as [#<ActionController::Filters::ClassMethods::ProcFilter:0x5e94c9c @filter=#<Proc:0x05541ec4@D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/verification.rb:74>>] returned false.
+Completed in 0.00200 (500 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:42:15) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:42:19) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"fdsaf", "price"=>"fadsf", "title"=>"21324", "date_available(1i)"=>"2013", "description"=>"432141", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"41"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('fdsaf', '2013-01-16 15:41:00', '0.0', '21324', '432141')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01500 (66 reqs/sec) | DB: 0.00400 (26%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:42:19) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00500 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:42:20) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00800 (44%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:43:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:43:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00300)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:43:27) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"fsadfa", "price"=>"dsafasd", "title"=>"fddsaf", "date_available(1i)"=>"2013", "description"=>"fasdfdsaf", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"43"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00600 (30%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:43:27) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"create", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/admin/list
+Filter chain halted as [#<ActionController::Filters::ClassMethods::ProcFilter:0x606a0d0 @filter=#<Proc:0x05541ec4@D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/verification.rb:74>>] returned false.
+Completed in 0.00100 (1000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:43:27) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00700 (38%) | DB: 0.00400 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:43:31) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"fsadfa", "price"=>"123", "title"=>"fddsaf", "date_available(1i)"=>"2013", "description"=>"fasdfdsaf", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"43"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('fsadfa', '2013-01-16 15:43:00', '123.0', 'fddsaf', 'fasdfdsaf')[0m
+  [4;35;1mSQL (0.001000)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01500 (66 reqs/sec) | DB: 0.00500 (33%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:43:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00500 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:43:31) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (45%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:45:49) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00400 (23%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#new (for 127.0.0.1 at 2013-01-16 15:45:49) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"new", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+Rendering  within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00400 (23%) | 200 OK [http://127.0.0.1/admin/new]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:45:54) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"fdsafadsf", "price"=>"sdafdsafdsa", "title"=>"dfsafd", "date_available(1i)"=>"2013", "description"=>"fdsafsdf", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"45"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.title = 'dfsafd') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00200)
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00500 (24%) | DB: 0.00500 (24%) | 200 OK [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:45:54) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"create", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/admin/list
+Filter chain halted as [#<ActionController::Filters::ClassMethods::ProcFilter:0x5f7d9ec @filter=#<Proc:0x05541ec4@D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/verification.rb:74>>] returned false.
+Completed in 0.00200 (500 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:45:54) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02200 (45 reqs/sec) | Rendering: 0.00900 (40%) | DB: 0.00500 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:46:11) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"http://i.img", "price"=>"2321", "title"=>"dfsafd", "date_available(1i)"=>"2013", "description"=>"fdsafsdf", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"45"}, "action"=>"create", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (products.title = 'dfsafd') LIMIT 1[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Rendering actionnewlayoutfalse within layouts/admin
+Rendering admin/new
+Rendered admin/_form (0.00100)
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00600 (29%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:46:12) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"create", "controller"=>"admin"}
+Redirected to http://127.0.0.1:3000/admin/list
+Filter chain halted as [#<ActionController::Filters::ClassMethods::ProcFilter:0x6100c9c @filter=#<Proc:0x05541ec4@D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/verification.rb:74>>] returned false.
+Completed in 0.00100 (1000 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:46:12) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.00800 (44%) | DB: 0.00500 (27%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#create (for 127.0.0.1 at 2013-01-16 15:46:21) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"commit"=>"Create", "product"=>{"image_url"=>"http://i.gif", "price"=>"2321", "title"=>"dfsafd", "date_available(1i)"=>"2013", "description"=>"fdsafsdf", "date_available(2i)"=>"1", "date_available(3i)"=>"16", "date_available(4i)"=>"15", "date_available(5i)"=>"45"}, "action"=>"create", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.001000)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.title = 'dfsafd') LIMIT 1[0m
+  [4;35;1mSQL (0.001000)[0m   [0mINSERT INTO products (`image_url`, `date_available`, `price`, `title`, `description`) VALUES('http://i.gif', '2013-01-16 15:45:00', '2321.0', 'dfsafd', 'fdsafsdf')[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01600 (62 reqs/sec) | DB: 0.00600 (37%) | 302 Found [http://127.0.0.1/admin/create]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:46:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (45%) | DB: 0.00500 (24%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:46:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:48:23) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.006000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.00900 (42%) | DB: 0.00700 (33%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:48:23) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.00900 (42%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:53:37) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00400 (23%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:53:38) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 1) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.00400 (26%) | DB: 0.00500 (33%) | 200 OK [http://127.0.0.1/admin/show/1]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:53:40) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.01000 (47%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#destroy (for 127.0.0.1 at 2013-01-16 15:53:43) [POST]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 1) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Destroy (0.001000)[0m   [0m DELETE FROM products
+ WHERE `id` = 1
+[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/list
+Completed in 0.01500 (66 reqs/sec) | DB: 0.00500 (33%) | 302 Found [http://127.0.0.1/admin/destroy/1]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:53:44) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02700 (37 reqs/sec) | Rendering: 0.01600 (59%) | DB: 0.00400 (14%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:53:44) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (45%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:53:47) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 3) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00400 (24%) | DB: 0.00400 (24%) | 200 OK [http://127.0.0.1/admin/show/3]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:53:47) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 3) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00400 (24%) | DB: 0.00500 (31%) | 200 OK [http://127.0.0.1/admin/show/3]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:53:48) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:54:01) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 2) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00400 (23%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/admin/show/2]
+
+
+Processing AdminController#show (for 127.0.0.1 at 2013-01-16 15:54:01) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 2) [0m
+Rendering  within layouts/admin
+Rendering admin/show
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.00400 (25%) | DB: 0.00400 (25%) | 200 OK [http://127.0.0.1/admin/show/2]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:57:57) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02500 (40 reqs/sec) | Rendering: 0.01300 (52%) | DB: 0.00500 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:57:58) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.01000 (50%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#222222222222222222 (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"222222222222222222", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 222222222222222222):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fsadfa (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fsadfa", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fsadfa):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fdsaf (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fdsaf", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fdsaf):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#4444444444444 (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"4444444444444", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 4444444444444):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#33333333333333333 (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"33333333333333333", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 33333333333333333):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#dsfads (for 127.0.0.1 at 2013-01-16 15:57:59) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"dsfads", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to dsfads):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:58:01) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:58:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02100 (47 reqs/sec) | Rendering: 0.00900 (42%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:59:29) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02200 (45 reqs/sec) | Rendering: 0.01100 (50%) | DB: 0.00600 (27%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 15:59:29) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (49 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:14) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02300 (43 reqs/sec) | Rendering: 0.01100 (47%) | DB: 0.00500 (21%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:14) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00500 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:15) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00400 (21%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:15) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (45%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00500 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (45%) | DB: 0.00600 (30%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00400 (21%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:00:16) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00800 (40%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:01:04) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02200 (45 reqs/sec) | Rendering: 0.01100 (50%) | DB: 0.00500 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:01:05) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.00900 (44%) | DB: 0.00500 (25%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:01:52) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02200 (45 reqs/sec) | Rendering: 0.01100 (50%) | DB: 0.00500 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:01:53) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00400 (21%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:02:24) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01900 (24%) | DB: 0.00500 (6%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:02:24) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02800 (35 reqs/sec) | Rendering: 0.01700 (60%) | DB: 0.00500 (17%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:02:44) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+
+
+ActionView::TemplateError (String can't be coerced into BigDecimal) on line #14 of app/views/admin/list.rhtml:
+11:   <tr>
+12:   <% for column in Product.content_columns %>
+13:     <td><%=h product.send(column.name) %></td>
+14:     <%= print product.send(column.name) + "\n" %>
+15:   <% end %>
+16:     <td><%= link_to 'Show', :action => 'show', :id => product %></td>
+17:     <td><%= link_to 'Edit', :action => 'edit', :id => product %></td>
+
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:14:in `+'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:14:in `_run_rhtml_47app47views47admin47list46rhtml'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:12:in `each'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:12:in `_run_rhtml_47app47views47admin47list46rhtml'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:10:in `each'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:10:in `_run_rhtml_47app47views47admin47list46rhtml'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:02:44) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+
+
+ActionView::TemplateError (String can't be coerced into BigDecimal) on line #14 of app/views/admin/list.rhtml:
+11:   <tr>
+12:   <% for column in Product.content_columns %>
+13:     <td><%=h product.send(column.name) %></td>
+14:     <%= print product.send(column.name) + "\n" %>
+15:   <% end %>
+16:     <td><%= link_to 'Show', :action => 'show', :id => product %></td>
+17:     <td><%= link_to 'Edit', :action => 'edit', :id => product %></td>
+
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:14:in `+'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:14:in `_run_rhtml_47app47views47admin47list46rhtml'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:12:in `each'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:12:in `_run_rhtml_47app47views47admin47list46rhtml'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:10:in `each'
+    #{RAILS_ROOT}/app/views/admin/list.rhtml:10:in `_run_rhtml_47app47views47admin47list46rhtml'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:326:in `compile_and_render_template'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:301:in `render_template'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_view/base.rb:260:in `render_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:806:in `render_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:711:in `render_with_no_layout'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/layout.rb:247:in `render_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:50:in `render'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1096:in `perform_action_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:03:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.001000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02200 (45 reqs/sec) | Rendering: 0.01000 (45%) | DB: 0.00500 (22%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:03:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.00800 (42%) | DB: 0.00500 (26%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02500 (40 reqs/sec) | Rendering: 0.01300 (52%) | DB: 0.00500 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#222222222222222222 (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"222222222222222222", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 222222222222222222):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#dsfads (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"dsfads", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to dsfads):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#4444444444444 (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"4444444444444", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 4444444444444):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fsadfa (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fsadfa", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fsadfa):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fdsaf (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fdsaf", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fdsaf):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#33333333333333333 (for 127.0.0.1 at 2013-01-16 16:05:07) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"33333333333333333", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 33333333333333333):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:05:09) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.01000 (50%) | DB: 0.00400 (19%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:05:21) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM products [0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02900 (34 reqs/sec) | Rendering: 0.01800 (62%) | DB: 0.00600 (20%) | 200 OK [http://127.0.0.1/admin/list]
+
+
+Processing AdminController#33333333333333333 (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"33333333333333333", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 33333333333333333):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#222222222222222222 (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"222222222222222222", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 222222222222222222):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fsadfa (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fsadfa", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fsadfa):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#fdsaf (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"fdsaf", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to fdsaf):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#4444444444444 (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"4444444444444", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to 4444444444444):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#dsfads (for 127.0.0.1 at 2013-01-16 16:05:22) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"dsfads", "controller"=>"admin"}
+
+
+ActionController::UnknownAction (No action responded to dsfads):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:634:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2013-01-16 16:05:24) [GET]
+  Session ID: adb5e9df9a95d862679df770112445a1
+  Parameters: {"action"=>"list", "controller"=>"admin"}
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM products [0m
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products LIMIT 0, 10[0m
+Rendering  within layouts/admin
+Rendering admin/list
+Completed in 0.02500 (39 reqs/sec) | Rendering: 0.01400 (55%) | DB: 0.00400 (16%) | 200 OK [http://127.0.0.1/admin/list]
