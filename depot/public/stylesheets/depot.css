@@ -1,0 +1,22 @@
+.catalogprice{
+background: #e0f8f8;
+outline:#00FF00 dotted thin;
+}
+
+.catalogentry{
+background: #e0f000;
+outline:#00FF00 dotted thin;
+}
+
+.separator{
+background: #e0fff0;
+outline:#00FF00 dotted thin;
+}
+.banner{
+background: #e00000;	
+outline:#00FF00 dotted thick;
+font-weight:900;
+font-size:40px;
+font-family: Georgia;
+text-align: center;
+}

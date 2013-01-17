@@ -1,0 +1,39 @@
+<h1>Store#index</h1>
+<p>Find me in app/views/store/index.rhtml</p>
+
+<html>
+    <head>
+            <title>Pragprog Books Online Store</title>
+            <%= stylesheet_link_tag "depot", :media => "all" %>
+    </head>
+    <body>
+            <div id="banner" class="banner">
+                    <img src="http://127.0.0.1/2.gif"/> ||
+                    <%= @page_title || "Pragmatic Bookshelf" %>
+            </div>
+            <div id="columns">
+                    <div id="side">
+                            <a href="http://www....">Home</a><br />
+                            <a href="http://www..../faq">Questions</a><br />
+                            <a href="http://www..../news">News</a><br />
+                            <a href="http://www..../contact">Contact</a><br />
+                    </div>
+                    <div id="main">
+                            <%= @content_for_layout %>
+                            <% for product in @products -%>
+                            <div class="catalogentry">
+                                    <img src="<%= product.image_url %>"/>
+                                    <h3><%= h(product.title) %></h3>
+                                    <%= product.description %>
+                                    <span class="catalogprice"><%= sprintf("$%0.2f", product.price) %></span>
+                                    <%= link_to 'Add to Cart',
+                                            {:action => 'add_to_cart', :id => product },
+                                            :class => 'addtocart' %><br/>
+                            </div>
+                            <div class="separator">&nbsp;</div>
+                            <% end %>
+                            <%= link_to "Show my cart", :action => "display_cart" %>
+                    </div>
+            </div>
+    </body>
+</html>
