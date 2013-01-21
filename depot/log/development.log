@@ -5027,3 +5027,1288 @@ Processing StoreController#index (for 127.0.0.1 at 2013-01-21 13:17:33) [GET]
 Rendering store/index
   [4;36;1mProduct Columns (0.006000)[0m   [0;1mSHOW FIELDS FROM products[0m
 Completed in 0.02300 (43 reqs/sec) | Rendering: 0.00800 (34%) | DB: 0.01700 (73%) | 200 OK [http://127.0.0.1/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 13:32:51) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.002000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Completed in 0.02500 (39 reqs/sec) | Rendering: 0.00900 (36%) | DB: 0.00700 (27%) | 200 OK [http://127.0.0.1/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 13:32:52) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.002000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+  [4;36;1mProduct Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Completed in 0.02500 (39 reqs/sec) | Rendering: 0.01000 (40%) | DB: 0.00700 (27%) | 200 OK [http://127.0.0.1/store]
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-21 13:32:53) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"add_to_cart", "id"=>"9", "controller"=>"store"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 9) [0m
+
+
+SyntaxError (D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:468:in `const_missing'
+    /app/controllers/store_controller.rb:20:in `find_cart'
+    /app/controllers/store_controller.rb:8:in `add_to_cart'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-21 13:32:53) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"add_to_cart", "id"=>"9", "controller"=>"store"}
+  [4;35;1mProduct Columns (0.005000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 9) [0m
+
+
+SyntaxError (D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:248:in `load_missing_constant'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:452:in `const_missing'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:464:in `const_missing'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:468:in `const_missing'
+    /app/controllers/store_controller.rb:20:in `find_cart'
+    /app/controllers/store_controller.rb:8:in `add_to_cart'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:1095:in `perform_action_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (500 Internal Error)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 13:33:07) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+  [4;36;1mProduct Columns (0.008000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Completed in 0.02500 (40 reqs/sec) | Rendering: 0.00800 (32%) | DB: 0.02000 (80%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+D:/ror/ir17/rails_apps/depot/config/../app/models/cart.rb:8: syntax error, unexpected tLSHFT
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:54:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:52:in `require_dependencies'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:12:in `model_without_deprecation'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/deprecation.rb:94:in `model'
+D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_without_new_constant_marking'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:203:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:202:in `load_file'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:94:in `require_or_load'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:60:in `depend_on'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/activesupport-1.4.2/lib/active_support/dependencies.rb:442:in `require_dependency'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:110:in `prepare_application'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:39:in `dispatch'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+D:/ror/ir17/ruby/bin/mongrel_rails:16
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mSQL (0.000000)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 19:01:14) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.00600 (35%) | DB: 0.00500 (29%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 19:01:15) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+  [4;35;1mProduct Columns (0.003000)[0m   [0mSHOW FIELDS FROM products[0m
+Completed in 0.01400 (71 reqs/sec) | Rendering: 0.00500 (35%) | DB: 0.00300 (21%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-21 19:01:17) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"add_to_cart", "id"=>"9", "controller"=>"store"}
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 9) [0m
+  [4;36;1mLineItem Columns (0.005000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.01800 (55 reqs/sec) | DB: 0.01000 (55%) | 302 Found [http://127.0.0.1/store/add_to_cart/9]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:17) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00200 (500 reqs/sec) | Rendering: 0.00200 (100%) | DB: 0.00700 (350%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.004000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:17) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00200 (499 reqs/sec) | Rendering: 0.00100 (50%) | DB: 0.00700 (349%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 19:01:21) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+Completed in 0.00700 (142 reqs/sec) | Rendering: 0.00500 (71%) | DB: 0.00700 (100%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-21 19:01:23) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"add_to_cart", "id"=>"8", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 8) [0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.00300 (333 reqs/sec) | DB: 0.00700 (233%) | 302 Found [http://127.0.0.1/store/add_to_cart/8]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.004000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:23) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00100 (1000 reqs/sec) | Rendering: 0.00100 (100%) | DB: 0.00800 (800%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.004000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:23) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00200 (500 reqs/sec) | Rendering: 0.00100 (50%) | DB: 0.00700 (350%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.004000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:58) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00800 (124 reqs/sec) | Rendering: 0.00700 (87%) | DB: 0.00700 (87%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-21 19:01:58) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:01:58) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00500 (199 reqs/sec) | Rendering: 0.00400 (80%) | DB: 0.01300 (259%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.004000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-21 19:02:03) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.000000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+Completed in 0.00600 (166 reqs/sec) | Rendering: 0.00400 (66%) | DB: 0.00800 (133%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.004000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.004000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-21 19:02:05) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"add_to_cart", "id"=>"5", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 5) [0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.00500 (200 reqs/sec) | DB: 0.00900 (180%) | 302 Found [http://127.0.0.1/store/add_to_cart/5]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:02:06) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00400 (250 reqs/sec) | Rendering: 0.00400 (100%) | DB: 0.00600 (150%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-21 19:02:06) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.003000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.003000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:02:06) [GET]
+  Session ID: ca17cfbeeff4578e804cbda2183b73b0
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.00500 (199 reqs/sec) | Rendering: 0.00400 (79%) | DB: 0.01200 (239%) | 200 OK [http://127.0.0.1/store/display_cart]
