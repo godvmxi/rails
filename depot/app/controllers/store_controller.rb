@@ -19,15 +19,10 @@ class StoreController < ApplicationController
 		if @items.empty?
    			redirect_to_index("Your cart is currently empty")
    		end
+   		if params[:context] == :checkout
+   			render(:layout=> false)
+   		end
 	end
-
-	def empty_cart
-		find_cart.empty!
-		flash[:notice] = 'Your cart is now empty'
-		redirect_to(:action => 'index')
-	end
-
-	
 
 	def empty_cart
 		find_cart.empty!

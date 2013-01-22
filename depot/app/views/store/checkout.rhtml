@@ -1,6 +1,7 @@
 <% @page_title = "Checkout" -%>
 <%= start_form_tag(:action => "save_order") %>
 <%= error_messages_for("order") %>
+<%= render_component(:action => "display_cart",:params => { :context => :checkout }) %>
 <%= stylesheet_link_tag "scaffold", "depot", :media => "all" %>
     <table>
             <tr>

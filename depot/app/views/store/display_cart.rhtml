@@ -4,11 +4,21 @@
     <%= stylesheet_link_tag "scaffold", "depot", "admin", :media => "all" %>
     </head>
     <div id="cartmenu">
+            <!--
             <ul>
                     <li><%= link_to 'Continue shopping', :action => "index" %></li>
                     <li><%= link_to 'Empty cart', :action => "empty_cart" %></li>
                     <li><%= link_to 'Checkout', :action => "checkout" %></li>
             </ul>
+            -->
+            <ul>
+                <li><%= link_to 'Continue shopping', :action => "index" %></li>
+                <% unless params[:context] == :checkout -%>
+                <li><%= link_to 'Empty cart', :action => "empty_cart" %></li>
+                <li><%= link_to 'Checkout', :action => "checkout" %></li>
+                <% end -%>
+            </ul>
+
     </div>
     <table cellpadding="10" cellspacing="0">
             <tr class="carttitle">
