@@ -6312,3 +6312,1024 @@ Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-21 19:02:06) [
   Parameters: {"action"=>"display_cart", "controller"=>"store"}
 Rendering store/display_cart
 Completed in 0.00500 (199 reqs/sec) | Rendering: 0.00400 (79%) | DB: 0.01200 (239%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:37) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mSQL (0.041000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProduct Load (0.084000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Completed in 0.44600 (2 reqs/sec) | Rendering: 0.02900 (6%) | DB: 0.13500 (30%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:39) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+Completed in 0.04500 (22 reqs/sec) | Rendering: 0.01600 (35%) | DB: 0.01100 (24%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-22 10:59:41) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"add_to_cart", "id"=>"9", "controller"=>"store"}
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 9) [0m
+  [4;35;1mLineItem Columns (0.091000)[0m   [0mSHOW FIELDS FROM line_items[0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.12600 (7 reqs/sec) | DB: 0.10100 (80%) | 302 Found [http://127.0.0.1/store/add_to_cart/9]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.011000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:41) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.02000 (50 reqs/sec) | Rendering: 0.01800 (89%) | DB: 0.02000 (100%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 10:59:42) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:42) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01000 (83%) | DB: 0.03700 (308%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:44) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.01300 (72%) | DB: 0.02000 (111%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-22 10:59:46) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"add_to_cart", "id"=>"8", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 8) [0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.01000 (100 reqs/sec) | DB: 0.01900 (189%) | 302 Found [http://127.0.0.1/store/add_to_cart/8]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.011000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:46) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.02100 (161%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 10:59:47) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:47) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01000 (83%) | DB: 0.03600 (299%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:50) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.01300 (72%) | DB: 0.02000 (111%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:51) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01900 (52 reqs/sec) | Rendering: 0.01500 (78%) | DB: 0.02000 (105%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-22 10:59:53) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"add_to_cart", "id"=>"5", "controller"=>"store"}
+  [4;36;1mProduct Load (0.000000)[0m   [0;1mSELECT * FROM products WHERE (products.`id` = 5) [0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.01000 (100 reqs/sec) | DB: 0.01800 (180%) | 302 Found [http://127.0.0.1/store/add_to_cart/5]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:53) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.01900 (146%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 10:59:54) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:54) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.03600 (276%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.011000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:56) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01600 (62 reqs/sec) | Rendering: 0.01200 (74%) | DB: 0.02100 (131%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 10:59:57) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.01200 (70%) | DB: 0.02000 (117%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.008000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2013-01-22 10:59:58) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"add_to_cart", "id"=>"9", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (products.`id` = 9) [0m
+Redirected to http://127.0.0.1:3000/store/display_cart
+Completed in 0.00900 (111 reqs/sec) | DB: 0.01900 (211%) | 302 Found [http://127.0.0.1/store/add_to_cart/9]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:59) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.01800 (138%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.011000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 10:59:59) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 10:59:59) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01000 (83%) | DB: 0.03900 (324%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.013000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.012000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:22:12) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.02500 (192%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:22:12) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:22:13) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.03800 (292%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2013-01-22 11:22:16) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"empty_cart", "controller"=>"store"}
+
+
+ActionController::UnknownAction (No action responded to empty_cart):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2013-01-22 11:22:16) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"empty_cart", "controller"=>"store"}
+
+
+ActionController::UnknownAction (No action responded to empty_cart):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:632:in `call_filter'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:619:in `perform_action_without_benchmark'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/benchmarking.rb:66:in `perform_action_without_rescue'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/rescue.rb:83:in `perform_action'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `send'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:430:in `process_without_filters'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/filters.rb:624:in `process_without_session_management_support'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/session_management.rb:114:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/base.rb:330:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:41:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.010000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:22:20) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.01200 (70%) | DB: 0.05900 (347%) | 200 OK [http://127.0.0.1/store/]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:22:21) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.01200 (70%) | DB: 0.01900 (111%) | 200 OK [http://127.0.0.1/store/]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:17) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.14300 (6 reqs/sec) | Rendering: 0.14100 (98%) | DB: 0.01900 (13%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:23:18) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.008000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:19) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.03500 (269%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mSQL (0.000000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mLineItem Columns (0.010000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:46) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.02300 (43 reqs/sec) | Rendering: 0.02000 (86%) | DB: 0.01900 (82%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:23:47) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.008000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:47) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.03500 (269%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.010000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:57) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01400 (71 reqs/sec) | Rendering: 0.01200 (85%) | DB: 0.01900 (135%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:23:57) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:23:58) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01400 (71 reqs/sec) | Rendering: 0.01200 (85%) | DB: 0.03800 (271%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.010000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:25:35) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.01900 (146%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.011000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:25:36) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:25:36) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01100 (91%) | DB: 0.03900 (325%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.010000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:28:53) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.02900 (34 reqs/sec) | Rendering: 0.02400 (82%) | DB: 0.02000 (68%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.009000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:28:53) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.001000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.01300 (76%) | DB: 0.01900 (111%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.010000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.010000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:28:57) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01100 (84%) | DB: 0.02000 (153%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-01-22 11:28:57) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {}
+
+
+ActionController::RoutingError (no route found to match "/stylesheets/admin.css" with {:method=>:get}):
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1292:in `recognize_path'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/routing.rb:1282:in `recognize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/rails-1.2.3/lib/dispatcher.rb:40:in `dispatch'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:78:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `synchronize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/rails.rb:76:in `process'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:618:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:617:in `process_client'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:736:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `initialize'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `new'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel.rb:720:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:271:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `each'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/configurator.rb:270:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:127:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/lib/mongrel/command.rb:211:in `run'
+    D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/mongrel-1.0.1-mswin32/bin/mongrel_rails:243
+    D:/ror/ir17/ruby/bin/mongrel_rails:16:in `load'
+    D:/ror/ir17/ruby/bin/mongrel_rails:16
+
+
+Rendering D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/templates/rescues/layout.rhtml (404 Page Not Found)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.009000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#display_cart (for 127.0.0.1 at 2013-01-22 11:28:58) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"display_cart", "controller"=>"store"}
+Rendering store/display_cart
+Completed in 0.01200 (83 reqs/sec) | Rendering: 0.01000 (83%) | DB: 0.03600 (299%) | 200 OK [http://127.0.0.1/store/display_cart]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;35;1mLineItem Columns (0.008000)[0m   [0mSHOW FIELDS FROM line_items[0m
+  [4;36;1mProduct Columns (0.009000)[0m   [0;1mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:28:59) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;35;1mProduct Load (0.001000)[0m   [0mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.01700 (58 reqs/sec) | Rendering: 0.01300 (76%) | DB: 0.01800 (105%) | 200 OK [http://127.0.0.1/store]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+  [4;36;1mLineItem Columns (0.012000)[0m   [0;1mSHOW FIELDS FROM line_items[0m
+  [4;35;1mProduct Columns (0.016000)[0m   [0mSHOW FIELDS FROM products[0m
+
+
+Processing StoreController#index (for 127.0.0.1 at 2013-01-22 11:29:00) [GET]
+  Session ID: fe5efd9e830f5a1dfd1ed37aa83f7a7b
+  Parameters: {"action"=>"index", "controller"=>"store"}
+  [4;36;1mProduct Load (0.002000)[0m   [0;1mSELECT * FROM products WHERE (date_available <= now()) ORDER BY date_available desc[0m
+Rendering store/index
+DEPRECATION WARNING: @flash is deprecated! Call flash.[] instead of @flash.[]. Args: [:notice]  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47store47index46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/store/index.rhtml:23)
+Completed in 0.02400 (41 reqs/sec) | Rendering: 0.01900 (79%) | DB: 0.03000 (124%) | 200 OK [http://127.0.0.1/store]
