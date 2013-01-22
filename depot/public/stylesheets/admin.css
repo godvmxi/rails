@@ -1,0 +1,13 @@
+.carttitle{
+
+	border-style: solid dotted dashed double;
+	background-color: green
+}
+.producttr{
+	border-style: solid dotted dashed double;
+	padding-top: 10px;
+	  padding-right: 0.25em;
+	  padding-bottom: 2ex;
+	  padding-left: 20%;
+	  background-color: red
+}

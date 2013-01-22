@@ -27,13 +27,18 @@
                     <tr>
                             <td><%= item.quantity %></td>
                             <td><%= h(product.title) %></td>
+                        <!--
                             <td align="right"><%= item.unit_price %></td>
                             <td align="right"><%= item.unit_price * item.quantity %></td>
+                        -->
+
+                            <td align="right"><%= fmt_dollars(item.unit_price) %></td>
+                            <td align="right"><%= fmt_dollars(item.unit_price * item.quantity) %></td>
                     </tr>
             <% end %>
             <tr>
                     <td colspan="3" align="right"><strong>Total:</strong></td>
-                    <td id="totalcell"><%= @cart.total_price %></td>
+                    <td id="totalcell"><%= fmt_dollars(@cart.total_price) %></td>
             </tr>
     </table>
 </html>
