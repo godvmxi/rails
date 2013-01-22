@@ -5,4 +5,5 @@ class Order < ActiveRecord::Base
 	[ "Credit Card", "cc" ],
 	[ "Purchase Order", "po" ]
 	].freeze
+	validates_presence_of :name, :email, :address, :pay_type	
 end

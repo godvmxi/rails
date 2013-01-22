@@ -1,5 +1,7 @@
 <% @page_title = "Checkout" -%>
 <%= start_form_tag(:action => "save_order") %>
+<%= error_messages_for("order") %>
+<%= stylesheet_link_tag "scaffold", "depot", :media => "all" %>
     <table>
             <tr>
             <td>Name:</td>

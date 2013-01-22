@@ -51,11 +51,26 @@ class StoreController < ApplicationController
 	end
 
 
+	def save_order
+		@cart = find_cart
+		@order = Order.new(params[:order])
+		@order.line_items <<@cart.items
+		if @order.save
+			@cart.empty!
+			redirect_to_index('Thank you for your order')
+		else
+			render(:action=>'checkout')
+		end
+	end
+
+
+
 	private
 	
 	def find_cart
 		session[:cart] ||= Cart.new
 	end
+
 end
 
 
