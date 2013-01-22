@@ -1,5 +1,6 @@
 class LineItem < ActiveRecord::Base
 	belongs_to :product
+	belongs_to :order
 	def self.for_product(product) self.new
 		item = self.new
 		item.quantity = 1
