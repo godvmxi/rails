@@ -46,3 +46,15 @@ constraint fk_items_product foreign key (product_id) references products(id),
 constraint fk_items_order foreign key (order_id) references orders(id),
 primary key (id)
 );
+
+//lesson 14
+drop table if exists orders;
+create table orders (
+id int not null auto_increment,
+name varchar(100) not null,
+email varchar(255) not null,
+address text not null,
+pay_type char(10) not null,
+shipped_at datetime null,
+primary key (id)
+);

@@ -1,0 +1,18 @@
+<tr valign="top">
+       <td class="olnamebox">
+                     <div class="olname"><%= h(order_line.name) %></div>
+                     <div class="oladdress"><%= h(order_line.address) %></div>
+       </td>
+       <td class="olitembox">
+                     <% order_line.line_items.each do |li| %>
+                     <div class="olitem">
+                                   
+                                   <span class="olitemtitle">产品：<%= li.product.title %></span>
+                                   <span class="olitemqty">数量：<%= li.quantity %></span>
+                     </div>
+                     <% end %>
+       </td>
+       <td class="checkbox">
+                     <%= check_box("to_be_shipped", order_line.id, {}, "yes", "no") %>
+       </td>    
+</tr>

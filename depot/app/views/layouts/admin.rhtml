@@ -1,17 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Admin: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
-</head>
-<body>
-
-<p style="color: green"><%= flash[:notice] %></p>
-
-<%= yield  %>
-
-</body>
+<html>
+       <head>
+                     <title>ADMINISTER Pragprog Books Online Store</title>
+                     <%= stylesheet_link_tag "scaffold", "depot", "admin", :media => "all" %>
+       </head>
+       <body>
+       <div id="banner">
+                     <%= @page_title || "Administer Bookshelf" %>
+       </div>
+       <div id="columns">
+                     <div id="side">
+                                   <%= link_to("Products", :action => "list") %>
+                                   <%= link_to("Shipping", :action => "ship") %>
+                     </div>
+                     <div id="main">
+                                   <% if @flash[:notice] -%>
+                                                 <div id="notice"><%= @flash[:notice] %></div>
+                                   <% end -%>
+                                   <%= @content_for_layout %>
+                     </div>
+       </div>
+       </body>
 </html>

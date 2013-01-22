@@ -1,0 +1,9 @@
+<h1>Orders To Be Shipped</h1>
+<%= form_tag(:action => "ship") %>
+<table cellpadding="5" cellspacing="0">
+<%= render(:partial => "order_line", :collection => @pending_orders) %>
+</table>
+<br />
+ <input type="submit" value=" SHIP CHECKED ITEMS " />
+ <%= end_form_tag %>
+</br>

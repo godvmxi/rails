@@ -20,3 +20,10 @@ font-size:40px;
 font-family: Georgia;
 text-align: center;
 }
+#side{
+background: #99FF99; height: 2000px; width: 150px; float: left;
+}
+#main{
+background: #99FFFF; height: 2000px; width: 800px; float: left;
+}
+

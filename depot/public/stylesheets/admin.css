@@ -11,3 +11,18 @@
 	  padding-left: 20%;
 	  background-color: red
 }
+.olnamebox{
+background: #99FFdd; height: 100px; width: 200px; float: left;border-style: solid double;
+}
+.olitembox{
+background: #99FFcc; height: 100px; width: 600px; float: left;border-style: solid double;
+}
+.checkbox{
+background: green; height: 100px; width: 20px; float: left;border-style: solid double;
+}
+.olitemtitle{
+background: yellow; height: 20px; width: 200px; float: left;border-style: solid double;
+}
+.olitemqty{
+background: red; height: 20px; width: 200px; float: left;border-style: solid double;
+}
