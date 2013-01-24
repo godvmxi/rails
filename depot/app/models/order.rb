@@ -13,4 +13,7 @@ class Order < ActiveRecord::Base
 	def mark_as_shipped
    		self.shipped_at = Time.now
  	end
+ 	def self.count_pending
+		count("shipped_at is null")
+	end
 end
