@@ -16886,3 +16886,181 @@ DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See
 DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
 DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from ./script/../config/../config/../app/controllers/application.rb:8)
 DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:18:51) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01800 (55 reqs/sec) | Rendering: 0.01600 (88%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:18:52) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01100 (90 reqs/sec) | Rendering: 0.00900 (81%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:19:01) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00700 (77%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:19:02) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01000 (76%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:20:45) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.00900 (111 reqs/sec) | Rendering: 0.00700 (77%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:20:45) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01000 (99 reqs/sec) | Rendering: 0.00800 (79%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:20:50) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01100 (90 reqs/sec) | Rendering: 0.00900 (81%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:20:51) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01100 (90 reqs/sec) | Rendering: 0.00800 (72%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:41:32) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01000 (100 reqs/sec) | Rendering: 0.00800 (79%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:41:33) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01000 (100 reqs/sec) | Rendering: 0.00700 (70%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:41:49) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01000 (100 reqs/sec) | Rendering: 0.00800 (79%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:41:49) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.01300 (76 reqs/sec) | Rendering: 0.01000 (76%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:44:34) [POST]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"user"=>{"name"=>"admin", "password"=>"admin"}, "action"=>"add_user", "controller"=>"login"}
+  [4;36;1mSQL (0.001000)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.010000)[0m   [0mSHOW FIELDS FROM users[0m
+  [4;36;1mSQL (0.003000)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001000)[0m   [0mSELECT * FROM users WHERE (users.name = 'admin') LIMIT 1[0m
+  [4;36;1mSQL (0.001000)[0m   [0;1mINSERT INTO users (`name`, `hashed_password`) VALUES('admin', 'd033e22ae348aeb5660fc2140aec35850c4da997')[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.33200 (3 reqs/sec) | Rendering: 0.00800 (2%) | DB: 0.01600 (4%) | 200 OK [http://127.0.0.1/login/add_user]
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:7)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+DEPRECATION WARNING: model is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from D:/ror/ir17/rails_apps/depot/config/../app/controllers/application.rb:8)
+DEPRECATION WARNING: depend_on is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from model_without_deprecation at D:/ror/ir17/ruby/lib/ruby/gems/1.8/gems/actionpack-1.13.3/lib/action_controller/deprecated_dependencies.rb:13)
+
+
+Processing LoginController#add_user (for 127.0.0.1 at 2013-01-24 13:44:35) [GET]
+  Session ID: ef232b2ef407dda70adfcfaa8d17e0d7
+  Parameters: {"action"=>"add_user", "controller"=>"login"}
+  [4;36;1mUser Columns (0.014000)[0m   [0;1mSHOW FIELDS FROM users[0m
+  [4;35;1mSQL (0.001000)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000000)[0m   [0;1mSELECT * FROM users WHERE (users.name = '') LIMIT 1[0m
+  [4;35;1mSQL (0.000000)[0m   [0mCOMMIT[0m
+Rendering login/add_user
+DEPRECATION WARNING: end_form_tag is deprecated and will be removed from Rails 2.0  See http://www.rubyonrails.org/deprecation for details. (called from _run_rhtml_47app47views47login47add_user46rhtml at D:/ror/ir17/rails_apps/depot/config/../app/views/login/add_user.rhtml:35)
+Completed in 0.07800 (12 reqs/sec) | Rendering: 0.01100 (14%) | DB: 0.01500 (19%) | 200 OK [http://127.0.0.1/login/add_user]
